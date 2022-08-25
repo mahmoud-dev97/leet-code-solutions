@@ -3,6 +3,5 @@
  * @return {boolean}
  */
 var containsDuplicate = function (nums) {
-  let newArr = [...new Set(nums)].join("");
-  return newArr !== nums.join("")
+  return [...new Set(nums)].join("") !== nums.join("")
 };
